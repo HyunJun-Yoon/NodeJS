@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ChatCord App</title>
+  </head>
+  <body>
+    <div class="join-container">
+      <header class="join-header">
+        <h1>ChatCord</h1>
+      </header>
+      <main class="join-main">
+        <form name="form" action="chat.html">
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter username..."
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="room">Room</label>
+            <select name="room" id="room">
+              <option value="Covid19">Covid19</option>
+              <option value="NodeJS">NodeJS</option>
+              <option value="React">React</option>
+              <option value="News">News</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Join Chat</button>
+        </form>
+      </main>
+    </div>
+    <script>
+      // console.log(form.username.value);
+      // const { users } = require('./utils/users');
+      // console.log(users);
+      // function checkUsername() {
+      //   if (valUsername(form.username.value)) {
+      //     alert('User exists');
+      //     return false;
+      //   }
+      //}
+      //   var socket = io();
+      //   socket.on('connect', () => {
+      //     console.log(socket.id);
+      //   });
+
+      //   $(() => {
+      //     $('#send').click(() => {
+      //       sendMessage({ name: $('#name').val(), message: $('#message').val() });
+      //     });
+
+      //     getMessages();
+      //   });
+
+      //   socket.on('message', addMessages);
+
+      //   function addMessages(message) {
+      //     $('#messages').append(
+      //       `<h4> ${message.name} </h4> <p> ${message.message} </p>`
+      //     );
+      //   }
+
+      //   function getMessages() {
+      //     $.get('http://localhost:3001/messages', data => {
+      //       data.forEach(addMessages);
+      //     });
+      //   }
+
+      //   function sendMessage(message) {
+      //     $.post('http://localhost:3001/messages', message);
+      //   }
+      //
+    </script>
+  </body>
+</html>
